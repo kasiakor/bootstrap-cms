@@ -65,6 +65,7 @@
 <body>
     <div id="fh5co-page">
         @{ Html.RenderAction("RenderHeader", "SiteLayout");}
+
         @RenderBody()
         <div id="fh5co-featured-section">
             <div class="content">
@@ -189,35 +190,8 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/Evahealthdesigner">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.instagram.com/ewa.zak">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; kasiakor 2020</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    </div>
+    @{ Html.RenderAction("RenderFooter", "SiteLayout");}
+
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
