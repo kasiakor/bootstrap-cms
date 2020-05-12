@@ -265,6 +265,11 @@
     <Content Include="Config\Lang\ru-RU.user.xml" />
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="css\animate.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\icomoon.css" />
@@ -273,6 +278,7 @@
     <Content Include="default.aspx" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\bootstrap\index.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\icomoon\icomoon.svg" />
     <Content Include="fonts\icomoon\index.html" />
     <Content Include="fonts\index.html" />
@@ -296,12 +302,17 @@
     <Content Include="sass\bootstrap\index.html" />
     <Content Include="sass\bootstrap\mixins\index.html" />
     <Content Include="sass\index.html" />
+    <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\google_map.js" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\jquery.easing.1.3.js" />
     <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\jquery.waypoints.min.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\modernizr-2.6.2.min.js" />
     <Content Include="scripts\respond.min.js" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
@@ -338,6 +349,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\SiteLayoutController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -384,6 +396,9 @@
     <Content Include="obj\Debug\UmbracoGood4you.csproj.CopyComplete" />
     <Content Include="obj\Debug\UmbracoGood4you.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\UmbracoGood4you.csprojAssemblyReference.cache" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -496,6 +511,10 @@
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Partials\SiteLayout\Header.cshtml" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
