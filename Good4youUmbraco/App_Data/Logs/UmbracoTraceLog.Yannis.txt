@@ -213,3 +213,30 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2020-05-13 17:25:14,636 [P6888/D4/T53] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-05-12 17:25:14
  2020-05-13 17:25:14,660 [P6888/D4/T104] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
  2020-05-13 17:25:14,672 [P6888/D4/T104] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 11ms)
+ 2020-05-13 17:33:54,739 [P6888/D4/T135] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: kasiakor, IP Address: ::1
+ 2020-05-13 17:34:47,782 [P6888/D4/T84] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username kasiakor from IP address ::1
+ 2020-05-13 17:34:47,787 [P6888/D4/T84] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: kasiakor logged in from IP address ::1
+ 2020-05-13 17:34:48,498 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2020-05-13 17:34:48,511 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 13ms)
+ 2020-05-13 17:34:51,291 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2020-05-13 17:34:51,306 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 14ms)
+ 2020-05-13 17:34:51,312 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2020-05-13 17:34:51,334 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 22ms)
+ 2020-05-13 17:34:51,615 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2020-05-13 17:34:51,640 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 25ms)
+ 2020-05-13 17:34:56,988 [P6888/D4/T130] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IAction
+ 2020-05-13 17:34:57,040 [P6888/D4/T130] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IAction, found 0 (took 51ms)
+ 2020-05-13 17:35:16,659 [P6888/D4/T130] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2020-05-13 17:35:16,679 [P6888/D4/T130] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 19ms)
+ 2020-05-13 17:35:54,246 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Editors.IEditorValidator
+ 2020-05-13 17:35:54,261 [P6888/D4/T84] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Editors.IEditorValidator, found 0 (took 15ms)
+ 2020-05-13 17:39:15,997 [P6888/D4/T110] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Products' with Id '0' has been published.
+ 2020-05-13 17:39:20,341 [P6888/D4/T80] INFO  umbraco.content - Save Xml to file...
+ 2020-05-13 17:39:20,391 [P6888/D4/T80] INFO  umbraco.content - Saved Xml to file.
+ 2020-05-13 17:40:52,156 [P6888/D4/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Products' with Id '1055' has been unpublished.
+ 2020-05-13 17:40:56,465 [P6888/D4/T104] INFO  umbraco.content - Save Xml to file...
+ 2020-05-13 17:40:56,476 [P6888/D4/T104] INFO  umbraco.content - Saved Xml to file.
+ 2020-05-13 17:41:03,782 [P6888/D4/T100] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Products' with Id '0' has been published.
+ 2020-05-13 17:41:06,441 [P6888/D4/T100] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Products' with Id '1056' has been published.
+ 2020-05-13 17:41:10,705 [P6888/D4/T104] INFO  umbraco.content - Save Xml to file...
+ 2020-05-13 17:41:10,714 [P6888/D4/T104] INFO  umbraco.content - Saved Xml to file.
