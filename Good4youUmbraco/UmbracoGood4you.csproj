@@ -525,6 +525,9 @@
     <Content Include="Views\Blog.cshtml" />
     <Content Include="Views\Products.cshtml" />
     <Content Include="Views\Guide.cshtml" />
+    <Content Include="Views\Search.cshtml" />
+    <Content Include="Views\Contact.cshtml" />
+    <Content Include="Views\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
