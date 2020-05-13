@@ -511,3 +511,4 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
    at System.Threading.ThreadPoolWorkQueue.Dispatch()
    at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
  2020-05-13 19:11:40,304 [P6888/D7/T46] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-05-12 19:11:40
+ 2020-05-13 19:24:18,979 [P6888/D7/T79] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: kasiakor, IP Address: ::1
