@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #72b02c;
+  color: #fff;
   border: 2px solid #72b02c;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
@@ -641,9 +641,9 @@ h1, h2, h3, h4, h5, h6, figure {
 .work-inner .desc h3 a {
   color: rgba(0, 0, 0, 0.8);
 }
-.work-inner .desc h3 a:hover {
+ .work-inner .desc h3 a:hover {
   text-decoration: none;
-  color: #1FB57B;
+  color: #72b02c;
 }
 .work-inner .desc span {
   color: rgba(0, 0, 0, 0.5);
