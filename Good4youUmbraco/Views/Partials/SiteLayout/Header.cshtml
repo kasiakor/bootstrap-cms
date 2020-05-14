@@ -1,18 +1,49 @@
-﻿<header id="fh5co-header" role="banner">
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<List<NavigationListItem>>
+@using Good4youUmbraco.Models;
+
+
+
+<header id="fh5co-header" role="banner">
     <div class="container">
         <div class="header-inner">
             <h1><img id="logo" src="/images/logotransscale.gif"></h1>
             <nav role="navigation">
                 <ul>
-                    <li><a class="active" href="/">Home</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/products/">Products</a></li>
-                    <li><a href="/guide/">Guide</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li><a href="/search/">Search</a></li>
+                    @RenderChildItems(Model)
                 </ul>
             </nav>
         </div>
     </div>
 </header>
+
+
+@helper RenderChildItems(List<NavigationListItem> listItems)
+{
+    if (listItems != null)
+    {
+        foreach (var item in listItems)
+        {
+            <li>
+                @if (!String.IsNullOrEmpty(item.Text))
+                {
+                    @item.Text
+                }
+                else if (item.Link != null)
+                {
+                    <a href="@item.Link.Url" class="@(Umbraco.AssignedContentItem.Url == item.Link.Url ? "active" : null) @(item.HasChildren ? "fh5co-sub-ddown" : null)" target="@item.Link.Target">@item.Link.Text</a>
+                }
+
+                @if (item.HasChildren)
+                {
+                    <ul class="sub-menu">
+                        @RenderChildItems(item.Items)
+                    </ul>
+                }
+            </li>
+        }
+    }
+}
+
+
+
+
