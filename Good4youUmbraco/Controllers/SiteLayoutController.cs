@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using Umbraco.Core.Models;
 using Umbraco.Web.Mvc;
 using System.Runtime.Caching;
+using Umbraco.Web;
 
 namespace Good4youUmbraco.Controllers
 {
@@ -32,9 +33,10 @@ namespace Good4youUmbraco.Controllers
         /// <returns>A List of NavigationListItems, representing the structure of the site.</returns>
         private List<NavigationListItem> GetNavigationModelFromDatabase()
         {
-            const int HOME_PAGE_POSITION_IN_PATH = 1;
-            int homePageId = int.Parse(CurrentPage.Path.Split(',')[HOME_PAGE_POSITION_IN_PATH]);
-            IPublishedContent homePage = Umbraco.Content(homePageId);
+            IPublishedContent homePage = CurrentPage.AncestorOrSelf(1).DescendantsOrSelf().Where(x => x.DocumentTypeAlias == "home").FirstOrDefault();
+            //const int HOME_PAGE_POSITION_IN_PATH = 1;
+            //int homePageId = int.Parse(CurrentPage.Path.Split(',')[HOME_PAGE_POSITION_IN_PATH]);
+            //IPublishedContent homePage = Umbraco.Content(homePageId);
             List<NavigationListItem> nav = new List<NavigationListItem>();
             nav.Add(new NavigationListItem(new NavigationLink(homePage.Url, homePage.Name)));
             nav.AddRange(GetChildNavigationList(homePage));
@@ -46,9 +48,10 @@ namespace Good4youUmbraco.Controllers
         /// </summary>
         /// <param name="page">The parent page which you want the child structure for</param>
         /// <returns>A List of NavigationListItems, representing the structure of the pages below a page.</returns>
-        private List<NavigationListItem> GetChildNavigationList(dynamic page)
+        private List<NavigationListItem> GetChildNavigationList(IPublishedContent page)
         {
             List<NavigationListItem> listItems = null;
+            //var childPages = page.Children.Where(x => x.IsVisible());
             var childPages = page.Children.Where("Visible");
             if (childPages != null && childPages.Any() && childPages.Count() > 0)
             {
