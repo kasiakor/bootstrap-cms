@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Umbraco.Core.Models;
 using Umbraco.Web.Mvc;
+using System.Runtime.Caching;
 
 namespace Good4youUmbraco.Controllers
 {
@@ -18,7 +19,10 @@ namespace Good4youUmbraco.Controllers
         /// <returns>Partial view with a model</returns>
         public ActionResult RenderHeader()
         {
-            List<NavigationListItem> nav = GetNavigationModelFromDatabase();
+            //List<NavigationListItem> nav = GetNavigationModelFromDatabase();
+            //call mainNav from the cache, cache set up for 0 minutes, if expired/not found call the function GetNavigationModelFromDatabase 
+
+            List<NavigationListItem> nav = GetObjectFromCache<List<NavigationListItem>>("mainNav", 0, GetNavigationModelFromDatabase);
             return PartialView("~/Views/Partials/SiteLayout/Header.cshtml", nav);
         }
 
@@ -57,6 +61,29 @@ namespace Good4youUmbraco.Controllers
                 }
             }
             return listItems;
+        }
+
+
+        /// <summary>
+        /// A generic function for getting and setting objects to the memory cache.
+        /// </summary>
+        /// <typeparam name="T">The type of the object to be returned.</typeparam>
+        /// <param name="cacheItemName">The name to be used when storing this object in the cache.</param>
+        /// <param name="cacheTimeInMinutes">How long to cache this object for.</param>
+        /// <param name="objectSettingFunction">A parameterless function to call if the object isn't in the cache and you need to set it.</param>
+        /// <returns>An object of the type you asked for</returns>
+        private static T GetObjectFromCache<T>(string cacheItemName, int cacheTimeInMinutes, Func<T> objectSettingFunction)
+        {
+            ObjectCache cache = MemoryCache.Default;
+            var cachedObject = (T)cache[cacheItemName];
+            if (cachedObject == null)
+            {
+                CacheItemPolicy policy = new CacheItemPolicy();
+                policy.AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(cacheTimeInMinutes);
+                cachedObject = objectSettingFunction();
+                cache.Set(cacheItemName, cachedObject, policy);
+            }
+            return cachedObject;
         }
 
         public ActionResult RenderFooter()
