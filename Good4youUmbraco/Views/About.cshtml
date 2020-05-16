@@ -5,12 +5,7 @@
 
 <div id="fh5co-about-section">
 		<div class="container">
-			<div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                    @*<h2>@Umbraco.AssignedContentItem.GetPropertyValue("title")</h2>*@
-                    <h2>@Umbraco.Field("title", altFieldAlias: "pageName")</h2>
-                </div>
-			</div>
+			@{ Html.RenderAction("RenderTitle", "SiteLayout");}
 			<div class="row">
 				<div class="col-md-12">
                     <img id="facts-img" class="img-responsive"  src="/images/prezentacje.png" alt="facts" />

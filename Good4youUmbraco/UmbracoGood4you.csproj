@@ -541,6 +541,7 @@
     <Content Include="Views\Search.cshtml" />
     <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\About.cshtml" />
+    <Content Include="Views\Partials\SiteLayout\Title.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

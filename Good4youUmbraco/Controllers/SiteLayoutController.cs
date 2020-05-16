@@ -89,6 +89,11 @@ namespace Good4youUmbraco.Controllers
             return cachedObject;
         }
 
+        public ActionResult RenderTitle()
+        {
+            return PartialView("~/Views/Partials/SiteLayout/Title.cshtml");
+        }
+
         public ActionResult RenderFooter()
         {
             return PartialView("~/Views/Partials/SiteLayout/Footer.cshtml");
