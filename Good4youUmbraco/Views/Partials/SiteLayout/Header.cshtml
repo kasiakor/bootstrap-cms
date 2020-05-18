@@ -28,9 +28,14 @@
                 {
                     @item.Text
                 }
-                else if (item.Link != null)
+                else if (item.Link != null && item.Link.Text != "Search")
                 {
-                    <a href="@item.Link.Url" class="@(Umbraco.AssignedContentItem.Url == item.Link.Url ? "active" : null) @(item.HasChildren ? "fh5co-sub-ddown" : null)" target="@item.Link.Target">@item.Link.Text</a>
+                    <a href="@item.Link.Url" class="@(Umbraco.AssignedContentItem.Url == item.Link.Url ? "active" : null) @(item.Link.Text == "Search" ? "btn search-btn rounded bg-warning" : null) @(item.HasChildren ? "fh5co-sub-ddown" : null)" target="@item.Link.Target">@item.Link.Text</a>
+                }
+
+                else if (item.Link != null && item.Link.Text == "Search")
+                {
+                    <a href="@item.Link.Url" class="@(Umbraco.AssignedContentItem.Url == item.Link.Url ? "active" : null) @(item.Link.Text == "Search" ? "btn search-btn rounded bg-warning" : null)" target="@item.Link.Target"><span class="search-span"><i class="fas fa-search"></i> @item.Link.Text</span></a>
                 }
 
                 @if (item.HasChildren)
