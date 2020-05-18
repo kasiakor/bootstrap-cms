@@ -480,7 +480,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-main-services-section,
   #fh5co-about-section,
   #fh5co-contact-section {
-    padding: 3em;
+    padding: 3em 0;
   }
 }
 
@@ -1725,6 +1725,23 @@ a.bg-warning:hover {
         }
 }
 
+@media only screen and (max-width: 600px) {
+    #fh5co-main-services-section .services-inner span {
+        position: relative;
+        top: -5px;
+        display: block;
+        margin: 45px 0;
+        text-align: center;
+    }
+
+    #fh5co-main-services-section .services-inner .desc {
+        padding-left: 0;
+    }
+
+    #fh5co-main-services-section .services-inner h3 {
+        text-align: center;
+    }
+}
 
 
 
