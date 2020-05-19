@@ -405,7 +405,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: black;
 }
 #fh5co-header nav ul li a.active, #fh5co-header nav ul li a:focus, #fh5co-header nav ul li a:hover {
-  background: transparent;
+  /*background: transparent;*/
   color: #4f4f4f;
 }
 #fh5co-header nav ul li.cta {
@@ -1699,7 +1699,7 @@ ul.list-inline {
     color: #72b02c;
 }
 
-a.bg-warning:hover .search-span {
+a.bg-warning:hover .search-span, a.bg-warning:hover .search-span .fa-search {
     text-decoration: none;
     color: #fff;
 }
@@ -1724,6 +1724,8 @@ a.bg-warning:hover {
             color: #fff;
         }
 }
+
+/* mobile guide style */
 
 @media only screen and (max-width: 600px) {
     #fh5co-main-services-section .services-inner span {
