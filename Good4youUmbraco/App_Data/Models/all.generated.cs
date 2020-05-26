@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "35fb0cf8e2cb489f")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "25bd67dc6a6abfca")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -182,7 +182,7 @@ namespace Umbraco.Web.PublishedContentModels
 
 	/// <summary>About</summary>
 	[PublishedContentModel("about")]
-	public partial class About : PublishedContentModel, IBasicContentControls, ITitleControls
+	public partial class About : PublishedContentModel, IBasicContentControls, IHideFromTopNav, ITitleControls
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "about";
@@ -212,6 +212,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public Newtonsoft.Json.Linq.JToken ContentGrid
 		{
 			get { return BasicContentControls.GetContentGrid(this); }
+		}
+
+		///<summary>
+		/// Umbraco Navi Hide: Tick to hide from top nav
+		///</summary>
+		[ImplementPropertyType("umbracoNaviHide")]
+		public bool UmbracoNaviHide
+		{
+			get { return HideFromTopNav.GetUmbracoNaviHide(this); }
 		}
 
 		///<summary>
@@ -421,6 +430,52 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for Content Grid</summary>
 		public static Newtonsoft.Json.Linq.JToken GetContentGrid(IBasicContentControls that) { return that.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("contentGrid"); }
+	}
+
+	// Mixin content Type 1078 with alias "hideFromTopNav"
+	/// <summary>Hide From Top Nav</summary>
+	public partial interface IHideFromTopNav : IPublishedContent
+	{
+		/// <summary>Umbraco Navi Hide</summary>
+		bool UmbracoNaviHide { get; }
+	}
+
+	/// <summary>Hide From Top Nav</summary>
+	[PublishedContentModel("hideFromTopNav")]
+	public partial class HideFromTopNav : PublishedContentModel, IHideFromTopNav
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "hideFromTopNav";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public HideFromTopNav(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HideFromTopNav, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Umbraco Navi Hide: Tick to hide from top nav
+		///</summary>
+		[ImplementPropertyType("umbracoNaviHide")]
+		public bool UmbracoNaviHide
+		{
+			get { return GetUmbracoNaviHide(this); }
+		}
+
+		/// <summary>Static getter for Umbraco Navi Hide</summary>
+		public static bool GetUmbracoNaviHide(IHideFromTopNav that) { return that.GetPropertyValue<bool>("umbracoNaviHide"); }
 	}
 
 	/// <summary>Folder</summary>
