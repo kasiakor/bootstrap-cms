@@ -184,3 +184,38 @@ System.Net.WebException: The underlying connection was closed: An unexpected err
  2020-05-26 21:02:06,372 [P6040/D3/T22] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 11ms)
  2020-05-26 21:02:06,405 [P6040/D3/T22] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
  2020-05-26 21:02:06,434 [P6040/D3/T22] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 29ms)
+ 2020-05-26 21:10:28,699 [P6040/D3/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Editors.IEditorValidator
+ 2020-05-26 21:10:28,712 [P6040/D3/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Editors.IEditorValidator, found 0 (took 12ms)
+ 2020-05-26 21:13:37,936 [P6040/D3/T44] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2020-05-26 21:15:25,169 [P6040/D3/T47] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field multiPicker
+ 2020-05-26 21:15:25,169 [P6040/D3/T47] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field onlyImages
+ 2020-05-26 21:15:25,169 [P6040/D3/T47] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field disableFolderSelect
+ 2020-05-26 21:15:25,169 [P6040/D3/T47] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field startNodeId
+ 2020-05-26 21:18:28,415 [P6040/D3/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
+ 2020-05-26 21:18:33,038 [P6040/D3/T42] INFO  umbraco.content - Save Xml to file...
+ 2020-05-26 21:18:33,060 [P6040/D3/T42] INFO  umbraco.content - Saved Xml to file.
+ 2020-05-26 21:19:18,369 [P6040/D3/T44] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
+ 2020-05-26 21:19:22,519 [P6040/D3/T44] INFO  umbraco.content - Save Xml to file...
+ 2020-05-26 21:19:22,523 [P6040/D3/T44] INFO  umbraco.content - Saved Xml to file.
+ 2020-05-26 21:19:57,218 [P6040/D3/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
+ 2020-05-26 21:20:01,500 [P6040/D3/T44] INFO  umbraco.content - Save Xml to file...
+ 2020-05-26 21:20:01,503 [P6040/D3/T44] INFO  umbraco.content - Saved Xml to file.
+ 2020-05-26 21:20:35,230 [P6040/D3/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
+ 2020-05-26 21:20:39,368 [P6040/D3/T44] INFO  umbraco.content - Save Xml to file...
+ 2020-05-26 21:20:39,378 [P6040/D3/T44] INFO  umbraco.content - Saved Xml to file.
+ 2020-05-26 21:39:25,466 [P6040/D3/T52] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: kasiakor, IP Address: ::1
+ 2020-05-26 22:19:04,696 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2020-05-26 22:19:04,696 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2020-05-26 22:19:04,738 [P6040/D3/T36] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2020-05-26 22:19:04,786 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2020-05-26 22:19:04,786 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2020-05-26 22:19:04,786 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2020-05-26 22:19:04,786 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2020-05-26 22:19:04,786 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2020-05-26 22:19:04,786 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2020-05-26 22:19:04,786 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2020-05-26 22:19:04,786 [P6040/D3/T75] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2020-05-26 22:19:04,786 [P6040/D3/T88] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2020-05-26 22:19:04,787 [P6040/D3/T82] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2020-05-26 22:19:04,813 [P6040/D3/T95] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2020-05-26 22:19:04,813 [P6040/D3/T33] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
