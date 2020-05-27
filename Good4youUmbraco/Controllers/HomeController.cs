@@ -33,7 +33,7 @@ namespace Good4youUmbraco.Controllers
                 string category = fieldset.GetValue<string>("category");
 
                 int imageId = fieldset.GetValue<int>("image");
-                var mediaItem = Umbraco.Media("imageId");
+                var mediaItem = Umbraco.Media(imageId);
                 string imageUrl = mediaItem.Url;
 
                 int pageId = fieldset.GetValue<int>("page");
