@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "efb1bdb6276d347b")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "25faf1d930cbcd2")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -515,6 +515,129 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for Featured items</summary>
 		public static Archetype.Models.ArchetypeModel GetFeaturedItems(IFeaturedItemsControls that) { return that.GetPropertyValue<Archetype.Models.ArchetypeModel>("featuredItems"); }
+	}
+
+	// Mixin content Type 1085 with alias "articleControls"
+	/// <summary>Article Controls</summary>
+	public partial interface IArticleControls : IPublishedContent
+	{
+		/// <summary>Article Image</summary>
+		string ArticleImage { get; }
+
+		/// <summary>Article Intro</summary>
+		string ArticleIntro { get; }
+	}
+
+	/// <summary>Article Controls</summary>
+	[PublishedContentModel("articleControls")]
+	public partial class ArticleControls : PublishedContentModel, IArticleControls
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "articleControls";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public ArticleControls(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ArticleControls, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Article Image: Choose the image for this article
+		///</summary>
+		[ImplementPropertyType("articleImage")]
+		public string ArticleImage
+		{
+			get { return GetArticleImage(this); }
+		}
+
+		/// <summary>Static getter for Article Image</summary>
+		public static string GetArticleImage(IArticleControls that) { return that.GetPropertyValue<string>("articleImage"); }
+
+		///<summary>
+		/// Article Intro: Enter text as intro to the article
+		///</summary>
+		[ImplementPropertyType("articleIntro")]
+		public string ArticleIntro
+		{
+			get { return GetArticleIntro(this); }
+		}
+
+		/// <summary>Static getter for Article Intro</summary>
+		public static string GetArticleIntro(IArticleControls that) { return that.GetPropertyValue<string>("articleIntro"); }
+	}
+
+	/// <summary>Blog Post</summary>
+	[PublishedContentModel("blogPost")]
+	public partial class BlogPost : PublishedContentModel, IArticleControls, IBasicContentControls, ITitleControls
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "blogPost";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public BlogPost(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BlogPost, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Article Image: Choose the image for this article
+		///</summary>
+		[ImplementPropertyType("articleImage")]
+		public string ArticleImage
+		{
+			get { return ArticleControls.GetArticleImage(this); }
+		}
+
+		///<summary>
+		/// Article Intro: Enter text as intro to the article
+		///</summary>
+		[ImplementPropertyType("articleIntro")]
+		public string ArticleIntro
+		{
+			get { return ArticleControls.GetArticleIntro(this); }
+		}
+
+		///<summary>
+		/// Content Grid: Enter content
+		///</summary>
+		[ImplementPropertyType("contentGrid")]
+		public Newtonsoft.Json.Linq.JToken ContentGrid
+		{
+			get { return BasicContentControls.GetContentGrid(this); }
+		}
+
+		///<summary>
+		/// Title: Enter title for the page, if blank name of the page will be used
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return TitleControls.GetTitle(this); }
+		}
 	}
 
 	/// <summary>Folder</summary>
