@@ -1,405 +1,53 @@
-﻿ 2020-05-27 17:05:36,955 [P1952/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on YANNIS
- 2020-05-27 17:05:37,057 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
- 2020-05-27 17:05:37,263 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 206ms)
- 2020-05-27 17:05:37,456 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
- 2020-05-27 17:05:38,868 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 1412ms)
- 2020-05-27 17:05:38,910 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
- 2020-05-27 17:05:38,929 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 18ms)
- 2020-05-27 17:05:38,933 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
- 2020-05-27 17:05:38,946 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 12ms)
- 2020-05-27 17:05:38,989 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
- 2020-05-27 17:05:39,005 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 16ms)
- 2020-05-27 17:05:39,007 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
- 2020-05-27 17:05:39,017 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 10ms)
- 2020-05-27 17:05:39,173 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
- 2020-05-27 17:05:39,188 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 13ms)
- 2020-05-27 17:05:39,189 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
- 2020-05-27 17:05:39,199 [P1952/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 9ms)
- 2020-05-27 17:05:42,558 [P1952/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 17:05:44,496 [P1952/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 17:05:44,516 [P1952/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 17:05:45,043 [P1952/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
- 2020-05-27 17:05:45,691 [P1952/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
- 2020-05-27 17:05:45,692 [P1952/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
- 2020-05-27 17:05:45,746 [P1952/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 9046ms)
- 2020-05-27 17:05:46,731 [P1952/D2/T6] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51618/umbraco (UmbracoModule request)
- 2020-05-27 17:05:47,784 [P1952/D2/T6] INFO  umbraco.content - Load Xml from file...
- 2020-05-27 17:05:47,886 [P1952/D2/T6] INFO  umbraco.content - Loaded Xml from file.
- 2020-05-27 17:05:50,522 [P1952/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
- 2020-05-27 17:05:50,577 [P1952/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 55ms)
- 2020-05-27 17:05:50,909 [P1952/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
- 2020-05-27 17:05:50,921 [P1952/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 12ms)
- 2020-05-27 17:05:58,424 [P1952/D2/T6] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 17:06:48,268 [P1952/D2/T14] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-05-26 17:06:48
- 2020-05-27 17:09:54,482 [P1952/D2/T13] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username kasiakor from IP address ::1
- 2020-05-27 17:09:54,486 [P1952/D2/T13] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: kasiakor logged in from IP address ::1
- 2020-05-27 17:09:55,291 [P1952/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
- 2020-05-27 17:09:55,300 [P1952/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 8ms)
- 2020-05-27 17:09:55,620 [P1952/D2/T13] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
- 2020-05-27 17:09:55,637 [P1952/D2/T13] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 17ms)
- 2020-05-27 17:09:56,047 [P1952/D2/T22] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
- 2020-05-27 17:09:56,084 [P1952/D2/T22] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 37ms)
- 2020-05-27 17:09:56,087 [P1952/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
- 2020-05-27 17:09:56,088 [P1952/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
- 2020-05-27 17:09:56,093 [P1952/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
- 2020-05-27 17:09:56,113 [P1952/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 19ms)
- 2020-05-27 17:29:28,665 [P1952/D2/T47] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: kasiakor, IP Address: ::1
- 2020-05-27 17:30:31,246 [P1952/D2/T46] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username kasiakor from IP address ::1
- 2020-05-27 17:30:31,246 [P1952/D2/T46] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: kasiakor logged in from IP address ::1
- 2020-05-27 17:30:37,561 [P1952/D2/T46] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.HealthCheck.HealthCheck
- 2020-05-27 17:30:37,586 [P1952/D2/T46] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.HealthCheck.HealthCheck, found 0 (took 24ms)
- 2020-05-27 17:30:51,190 [P1952/D2/T39] ERROR dashboardUtilities.FeedProxy - Exception occurred
-System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
-   at System.Net.FixedSizeReader.ReadPacket(Byte[] buffer, Int32 offset, Int32 count)
-   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
-   at System.Net.TlsStream.CallProcessAuthentication(Object state)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Net.TlsStream.ProcessAuthentication(LazyAsyncResult result)
-   at System.Net.TlsStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at System.Net.ConnectStream.WriteHeaders(Boolean async)
-   --- End of inner exception stack trace ---
-   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
-   at System.Net.WebClient.DownloadString(Uri address)
-   at dashboardUtilities.FeedProxy.Page_Load(Object sender, EventArgs e)
- 2020-05-27 17:48:10,257 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
- 2020-05-27 17:48:10,258 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
- 2020-05-27 17:48:10,258 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
- 2020-05-27 17:48:10,258 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
- 2020-05-27 17:48:10,259 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
- 2020-05-27 17:48:10,259 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
- 2020-05-27 17:48:10,259 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
- 2020-05-27 17:48:10,259 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
- 2020-05-27 17:48:10,259 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
- 2020-05-27 17:48:10,259 [P1952/D2/T39] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
- 2020-05-27 17:48:10,260 [P1952/D2/T46] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
- 2020-05-27 17:48:10,263 [P1952/D2/T22] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
- 2020-05-27 17:48:10,269 [P1952/D2/T36] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
- 2020-05-27 17:48:10,269 [P1952/D2/T35] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
- 2020-05-27 17:48:10,270 [P1952/D2/T14] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
- 2020-05-27 17:48:33,209 [P1952/D3/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on YANNIS
- 2020-05-27 17:48:33,243 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
- 2020-05-27 17:48:33,259 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 16ms)
- 2020-05-27 17:48:33,360 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
- 2020-05-27 17:48:33,918 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 558ms)
- 2020-05-27 17:48:33,941 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
- 2020-05-27 17:48:33,949 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 7ms)
- 2020-05-27 17:48:33,950 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
- 2020-05-27 17:48:33,959 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 8ms)
- 2020-05-27 17:48:33,980 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
- 2020-05-27 17:48:33,989 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 8ms)
- 2020-05-27 17:48:33,991 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
- 2020-05-27 17:48:34,001 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 9ms)
- 2020-05-27 17:48:34,110 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
- 2020-05-27 17:48:34,118 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 7ms)
- 2020-05-27 17:48:34,120 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
- 2020-05-27 17:48:34,127 [P1952/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 7ms)
- 2020-05-27 17:48:35,838 [P1952/D3/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 17:48:36,252 [P1952/D3/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 17:48:36,262 [P1952/D3/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 17:48:36,289 [P1952/D3/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
- 2020-05-27 17:48:36,406 [P1952/D3/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
- 2020-05-27 17:48:36,406 [P1952/D3/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
- 2020-05-27 17:48:36,421 [P1952/D3/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3366ms)
- 2020-05-27 17:48:36,689 [P1952/D3/T36] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51618/umbraco (UmbracoModule request)
- 2020-05-27 17:48:40,440 [P1952/D2/T39] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
-
-_shutDownMessage=Change Notification for critical directories.
-bin dir change or directory rename
-HostingEnvironment initiated shutdown
-Change Notification for critical directories.
-bin dir change or directory rename
-Change Notification for critical directories.
-bin dir change or directory rename
-Change in C:\Users\Kasia\AppData\Local\Temp\Temporary ASP.NET Files\vs\5147a07a\900c0b30\hash\hash.web
-HostingEnvironment caused shutdown
-
-_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   at System.Environment.get_StackTrace()
-   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
-   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
-   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
-   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
-   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
-   at System.Web.DirectoryMonitor.FireNotifications()
-   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
-   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
-   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
-   at System.Threading.ThreadPoolWorkQueue.Dispatch()
-   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
- 2020-05-27 17:50:02,691 [P1952/D3/T46] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: kasiakor, IP Address: ::1
- 2020-05-27 17:51:49,673 [P1952/D3/T22] INFO  umbraco.content - Load Xml from file...
- 2020-05-27 17:51:49,694 [P1952/D3/T22] INFO  umbraco.content - Loaded Xml from file.
- 2020-05-27 17:51:50,536 [P1952/D3/T22] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
- 2020-05-27 17:51:50,560 [P1952/D3/T22] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 24ms)
- 2020-05-27 17:51:50,871 [P1952/D3/T22] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
- 2020-05-27 17:51:50,882 [P1952/D3/T22] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 10ms)
- 2020-05-27 17:51:56,604 [P1952/D3/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 17:52:49,771 [P1952/D3/T30] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-05-26 17:52:49
- 2020-05-27 19:46:16,618 [P1952/D3/T43] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:47:01,209 [P1952/D3/T69] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username kasiakor from IP address ::1
- 2020-05-27 19:47:01,214 [P1952/D3/T69] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: kasiakor logged in from IP address ::1
- 2020-05-27 19:47:01,759 [P1952/D3/T43] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
- 2020-05-27 19:47:01,812 [P1952/D3/T43] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 53ms)
- 2020-05-27 19:49:09,764 [P1952/D3/T22] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field multiPicker
- 2020-05-27 19:49:09,764 [P1952/D3/T22] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field onlyImages
- 2020-05-27 19:49:09,764 [P1952/D3/T22] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field disableFolderSelect
- 2020-05-27 19:49:09,764 [P1952/D3/T22] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field startNodeId
- 2020-05-27 19:50:18,070 [P1952/D3/T78] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
- 2020-05-27 19:50:18,093 [P1952/D3/T78] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 23ms)
- 2020-05-27 19:50:34,556 [P1952/D3/T57] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 19:50:39,159 [P1952/D3/T44] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 19:50:39,196 [P1952/D3/T44] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 19:50:40,496 [P1952/D3/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:50:49,786 [P1952/D3/T32] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:51:06,015 [P1952/D3/T68] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 19:51:10,097 [P1952/D3/T75] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 19:51:10,103 [P1952/D3/T75] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 19:51:15,669 [P1952/D3/T22] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 19:51:19,769 [P1952/D3/T75] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 19:51:19,774 [P1952/D3/T75] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 19:51:21,908 [P1952/D3/T70] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:56:38,045 [P1952/D3/T57] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:58:36,352 [P1952/D3/T82] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:58:40,229 [P1952/D3/T77] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:58:52,586 [P1952/D3/T70] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:58:53,478 [P1952/D3/T69] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 19:59:59,681 [P1952/D3/T57] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:00:03,801 [P1952/D3/T57] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:00:49,316 [P1952/D3/T78] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:01:22,034 [P1952/D3/T77] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:01:25,444 [P1952/D3/T84] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2020-05-27 20:01:44,552 [P1952/D3/T69] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:01:46,035 [P1952/D3/T23] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2020-05-27 20:04:23,239 [P1952/D3/T43] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:04:27,268 [P1952/D3/T23] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:05:56,376 [P1952/D3/T78] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:05:58,253 [P1952/D3/T84] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:06:35,758 [P1952/D3/T96] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: kasiakor, IP Address: ::1
- 2020-05-27 20:09:23,407 [P1952/D3/T77] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:09:27,445 [P1952/D3/T32] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:33:59,923 [P1952/D3/T70] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:37:00,298 [P1952/D3/T68] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:37:04,474 [P1952/D3/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:41:28,207 [P1952/D3/T73] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:41:31,917 [P1952/D3/T78] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:42:18,275 [P1952/D3/T82] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:42:21,572 [P1952/D3/T57] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:43:06,259 [P1952/D3/T32] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:43:09,765 [P1952/D3/T77] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:47:23,317 [P1952/D3/T19] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:47:26,998 [P1952/D3/T32] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:49:20,486 [P1952/D3/T23] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:49:23,674 [P1952/D3/T77] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:49:51,431 [P1952/D3/T77] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:50:17,279 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
- 2020-05-27 20:50:17,279 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
- 2020-05-27 20:50:17,285 [P1952/D3/T70] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
- 2020-05-27 20:50:17,290 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
- 2020-05-27 20:50:17,290 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
- 2020-05-27 20:50:17,291 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
- 2020-05-27 20:50:17,291 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
- 2020-05-27 20:50:17,292 [P1952/D3/T73] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
- 2020-05-27 20:50:17,296 [P1952/D3/T30] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
- 2020-05-27 20:50:17,309 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
- 2020-05-27 20:50:17,310 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
- 2020-05-27 20:50:17,311 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
- 2020-05-27 20:50:17,311 [P1952/D3/T78] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
- 2020-05-27 20:50:17,311 [P1952/D3/T23] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
- 2020-05-27 20:50:17,316 [P1952/D3/T19] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
- 2020-05-27 20:50:47,439 [P1952/D3/T78] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: MaxRecompilationsReached
-
-_shutDownMessage=Recompilation limit of 15 reached
-HostingEnvironment initiated shutdown
-HostingEnvironment caused shutdown
-
-_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   at System.Environment.get_StackTrace()
-   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
-   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
-   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
-   at System.Web.Compilation.DiskBuildResultCache.ShutdownCallBack(Object state)
-   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
-   at System.Threading.ThreadPoolWorkQueue.Dispatch()
-   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
- 2020-05-27 20:53:49,083 [P1952/D4/T27] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on YANNIS
- 2020-05-27 20:53:49,153 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
- 2020-05-27 20:53:49,197 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Hash determined (took 43ms)
- 2020-05-27 20:53:49,588 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
- 2020-05-27 20:53:49,933 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 345ms)
- 2020-05-27 20:53:50,159 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
- 2020-05-27 20:53:50,160 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
- 2020-05-27 20:53:50,161 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
- 2020-05-27 20:53:50,164 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 2ms)
- 2020-05-27 20:53:50,185 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
- 2020-05-27 20:53:50,208 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 22ms)
- 2020-05-27 20:53:50,209 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
- 2020-05-27 20:53:50,218 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 9ms)
- 2020-05-27 20:53:50,623 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
- 2020-05-27 20:53:50,625 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 2ms)
- 2020-05-27 20:53:50,626 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
- 2020-05-27 20:53:50,628 [P1952/D4/T27] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 1ms)
- 2020-05-27 20:53:52,847 [P1952/D4/T27] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 20:53:53,257 [P1952/D4/T27] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 20:53:53,355 [P1952/D4/T27] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 20:53:53,390 [P1952/D4/T27] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
- 2020-05-27 20:53:53,695 [P1952/D4/T27] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
- 2020-05-27 20:53:53,696 [P1952/D4/T27] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
- 2020-05-27 20:53:53,717 [P1952/D4/T27] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 4792ms)
- 2020-05-27 20:53:57,413 [P1952/D4/T42] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51618/umbraco (UmbracoModule request)
- 2020-05-27 20:53:58,309 [P1952/D4/T42] INFO  umbraco.content - Load Xml from file...
- 2020-05-27 20:53:58,426 [P1952/D4/T42] INFO  umbraco.content - Loaded Xml from file.
- 2020-05-27 20:53:59,313 [P1952/D4/T42] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
- 2020-05-27 20:53:59,315 [P1952/D4/T42] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 2ms)
- 2020-05-27 20:53:59,435 [P1952/D4/T42] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
- 2020-05-27 20:53:59,436 [P1952/D4/T42] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
- 2020-05-27 20:54:03,358 [P1952/D4/T42] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:54:35,013 [P1952/D4/T42] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username kasiakor from IP address ::1
- 2020-05-27 20:54:35,018 [P1952/D4/T42] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: kasiakor logged in from IP address ::1
- 2020-05-27 20:54:35,490 [P1952/D4/T42] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
- 2020-05-27 20:54:35,492 [P1952/D4/T42] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 1ms)
- 2020-05-27 20:54:44,887 [P1952/D4/T42] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 20:54:45,148 [P1952/D4/T42] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
- 2020-05-27 20:54:45,150 [P1952/D4/T42] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 1ms)
- 2020-05-27 20:54:49,563 [P1952/D4/T51] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 20:54:49,567 [P1952/D4/T51] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 20:54:58,638 [P1952/D4/T106] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-05-26 20:54:58
- 2020-05-27 20:55:14,715 [P1952/D4/T104] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 20:55:17,467 [P1952/D4/T104] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:01:40,773 [P1952/D4/T86] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:01:44,504 [P1952/D4/T80] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:02:59,911 [P1952/D4/T80] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:13:25,850 [P1952/D4/T96] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:13:45,097 [P1952/D4/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:14:05,930 [P1952/D4/T96] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: kasiakor, IP Address: ::1
- 2020-05-27 21:18:07,428 [P1952/D4/T84] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:18:24,793 [P1952/D4/T72] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:19:30,223 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
- 2020-05-27 21:19:30,223 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
- 2020-05-27 21:19:30,357 [P1952/D4/T106] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
- 2020-05-27 21:19:31,232 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
- 2020-05-27 21:19:31,232 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
- 2020-05-27 21:19:31,232 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
- 2020-05-27 21:19:31,232 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
- 2020-05-27 21:19:31,232 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
- 2020-05-27 21:19:31,232 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
- 2020-05-27 21:19:31,232 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
- 2020-05-27 21:19:31,232 [P1952/D4/T107] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
- 2020-05-27 21:19:31,234 [P1952/D4/T22] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
- 2020-05-27 21:19:31,235 [P1952/D4/T22] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
- 2020-05-27 21:19:31,241 [P1952/D4/T72] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
- 2020-05-27 21:19:31,241 [P1952/D4/T79] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
- 2020-05-27 21:20:01,518 [P1952/D4/T106] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
-
-_shutDownMessage=Change Notification for critical directories.
-bin dir change or directory rename
-HostingEnvironment initiated shutdown
-Change Notification for critical directories.
-bin dir change or directory rename
-Change Notification for critical directories.
-bin dir change or directory rename
-Change Notification for critical directories.
-bin dir change or directory rename
-Change Notification for critical directories.
-bin dir change or directory rename
-HostingEnvironment caused shutdown
-
-_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   at System.Environment.get_StackTrace()
-   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
-   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
-   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
-   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
-   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
-   at System.Web.DirectoryMonitor.FireNotifications()
-   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
-   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
-   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
-   at System.Threading.ThreadPoolWorkQueue.Dispatch()
-   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
- 2020-05-27 21:23:10,444 [P1952/D5/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on YANNIS
- 2020-05-27 21:23:10,511 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
- 2020-05-27 21:23:10,554 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 43ms)
- 2020-05-27 21:23:10,742 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
- 2020-05-27 21:23:12,321 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 1578ms)
- 2020-05-27 21:23:12,347 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
- 2020-05-27 21:23:12,355 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 8ms)
- 2020-05-27 21:23:12,356 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
- 2020-05-27 21:23:12,365 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 9ms)
- 2020-05-27 21:23:12,396 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
- 2020-05-27 21:23:12,438 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 41ms)
- 2020-05-27 21:23:12,439 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
- 2020-05-27 21:23:12,448 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 9ms)
- 2020-05-27 21:23:12,516 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
- 2020-05-27 21:23:12,523 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 7ms)
- 2020-05-27 21:23:12,525 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
- 2020-05-27 21:23:12,533 [P1952/D5/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 7ms)
- 2020-05-27 21:23:15,931 [P1952/D5/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 21:23:17,062 [P1952/D5/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 21:23:17,068 [P1952/D5/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2020-05-27 21:23:17,140 [P1952/D5/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
- 2020-05-27 21:23:17,436 [P1952/D5/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
- 2020-05-27 21:23:17,437 [P1952/D5/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
- 2020-05-27 21:23:17,497 [P1952/D5/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 7228ms)
- 2020-05-27 21:23:18,056 [P1952/D5/T73] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51618/umbraco (UmbracoModule request)
- 2020-05-27 21:23:18,977 [P1952/D5/T73] INFO  umbraco.content - Load Xml from file...
- 2020-05-27 21:23:19,021 [P1952/D5/T73] INFO  umbraco.content - Loaded Xml from file.
- 2020-05-27 21:23:20,982 [P1952/D5/T73] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
- 2020-05-27 21:23:21,005 [P1952/D5/T73] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 22ms)
- 2020-05-27 21:23:21,524 [P1952/D5/T73] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
- 2020-05-27 21:23:21,536 [P1952/D5/T73] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 12ms)
- 2020-05-27 21:23:29,655 [P1952/D5/T73] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:24:19,981 [P1952/D5/T19] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-05-26 21:24:19
- 2020-05-27 21:24:23,605 [P1952/D5/T78] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:24:55,770 [P1952/D5/T73] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username kasiakor from IP address ::1
- 2020-05-27 21:24:55,774 [P1952/D5/T73] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: kasiakor logged in from IP address ::1
- 2020-05-27 21:24:57,228 [P1952/D5/T23] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
- 2020-05-27 21:24:57,243 [P1952/D5/T23] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 14ms)
- 2020-05-27 21:26:09,721 [P1952/D5/T22] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 21:26:10,552 [P1952/D5/T22] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
- 2020-05-27 21:26:10,576 [P1952/D5/T22] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 23ms)
- 2020-05-27 21:26:14,870 [P1952/D5/T82] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 21:26:14,896 [P1952/D5/T82] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 21:26:15,772 [P1952/D5/T9] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:27:36,464 [P1952/D5/T55] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 21:27:40,571 [P1952/D5/T71] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 21:27:40,592 [P1952/D5/T71] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 21:27:46,306 [P1952/D5/T91] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:29:25,306 [P1952/D5/T92] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 21:29:29,572 [P1952/D5/T71] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 21:29:29,589 [P1952/D5/T71] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 21:29:32,657 [P1952/D5/T92] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:30:05,780 [P1952/D5/T97] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 21:30:09,895 [P1952/D5/T22] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 21:30:09,898 [P1952/D5/T22] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 21:30:10,546 [P1952/D5/T71] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:30:46,435 [P1952/D5/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 21:30:50,723 [P1952/D5/T97] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 21:30:50,747 [P1952/D5/T97] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 21:30:51,005 [P1952/D5/T69] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:31:18,951 [P1952/D5/T92] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1049' has been published.
- 2020-05-27 21:31:23,113 [P1952/D5/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:31:23,302 [P1952/D5/T97] INFO  umbraco.content - Save Xml to file...
- 2020-05-27 21:31:23,320 [P1952/D5/T97] INFO  umbraco.content - Saved Xml to file.
- 2020-05-27 21:33:34,648 [P1952/D5/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:39:07,709 [P1952/D5/T61] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2020-05-27 21:40:09,034 [P1952/D5/T60] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+﻿ 2020-05-29 18:01:35,724 [P4684/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on YANNIS
+ 2020-05-29 18:01:35,872 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2020-05-29 18:01:35,909 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 37ms)
+ 2020-05-29 18:01:36,506 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2020-05-29 18:01:37,254 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 748ms)
+ 2020-05-29 18:01:37,677 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2020-05-29 18:01:37,679 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+ 2020-05-29 18:01:37,680 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2020-05-29 18:01:37,683 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 3ms)
+ 2020-05-29 18:01:37,712 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2020-05-29 18:01:37,835 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 123ms)
+ 2020-05-29 18:01:37,837 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2020-05-29 18:01:37,876 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 38ms)
+ 2020-05-29 18:01:38,548 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2020-05-29 18:01:38,550 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 2ms)
+ 2020-05-29 18:01:38,554 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2020-05-29 18:01:38,556 [P4684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 1ms)
+ 2020-05-29 18:01:42,957 [P4684/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2020-05-29 18:01:44,201 [P4684/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2020-05-29 18:01:44,208 [P4684/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2020-05-29 18:01:44,772 [P4684/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2020-05-29 18:01:45,551 [P4684/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2020-05-29 18:01:45,552 [P4684/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2020-05-29 18:01:45,722 [P4684/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 10204ms)
+ 2020-05-29 18:01:54,199 [P4684/D2/T9] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51618/umbraco (UmbracoModule request)
+ 2020-05-29 18:01:55,918 [P4684/D2/T9] INFO  umbraco.content - Load Xml from file...
+ 2020-05-29 18:01:55,980 [P4684/D2/T9] INFO  umbraco.content - Loaded Xml from file.
+ 2020-05-29 18:01:57,899 [P4684/D2/T9] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2020-05-29 18:01:57,901 [P4684/D2/T9] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 2ms)
+ 2020-05-29 18:01:58,156 [P4684/D2/T9] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2020-05-29 18:01:58,158 [P4684/D2/T9] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2020-05-29 18:02:08,663 [P4684/D2/T9] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2020-05-29 18:02:56,259 [P4684/D2/T14] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2020-05-28 18:02:56
+ 2020-05-29 18:03:38,039 [P4684/D2/T20] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username kasiakor from IP address ::1
+ 2020-05-29 18:03:38,043 [P4684/D2/T20] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: kasiakor logged in from IP address ::1
+ 2020-05-29 18:03:38,476 [P4684/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2020-05-29 18:03:38,511 [P4684/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 35ms)
+ 2020-05-29 18:03:38,841 [P4684/D2/T12] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2020-05-29 18:03:38,843 [P4684/D2/T12] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 2ms)
+ 2020-05-29 18:03:39,272 [P4684/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2020-05-29 18:03:39,273 [P4684/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2020-05-29 18:03:39,278 [P4684/D2/T19] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2020-05-29 18:03:39,296 [P4684/D2/T19] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 17ms)
+ 2020-05-29 18:03:39,525 [P4684/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2020-05-29 18:03:39,537 [P4684/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 12ms)
+ 2020-05-29 18:13:25,259 [P4684/D2/T13] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2020-05-29 18:15:10,323 [P4684/D2/T32] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2020-05-29 18:18:49,612 [P4684/D2/T10] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2020-05-29 18:19:34,102 [P4684/D2/T33] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2020-05-29 18:19:51,255 [P4684/D2/T27] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2020-05-29 18:23:03,707 [P4684/D2/T16] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2020-05-29 18:23:12,268 [P4684/D2/T19] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: kasiakor, IP Address: ::1
+ 2020-05-29 18:24:46,954 [P4684/D2/T19] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type Good4youUmbraco.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
